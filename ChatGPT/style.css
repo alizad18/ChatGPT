@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 53, 61);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.container h1{
+    font-size: 10vw;
+    background: linear-gradient(to right, rgba(255, 252, 252, 0.658),rgba(3, 3, 247, 0.664),rgba(255, 0, 149, 0.767));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+.container h2{
+     font-size: 3vw;
+     color: aliceblue;
+}
+.prompt-area{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(44, 53, 61);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#prompt{
+    background-color: rgba(235, 242, 248, 0.452);
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    outline: none;
+    border: 2px solid rgb(58, 63, 66);
+    border-right: none;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: 2px 2px 10px black,inset -2px -4px 10px black,-2px -4px 10px black;
+    font-size: 20px;
+    color: white;
+}
+#btn{
+    width: 10%;
+    height: 60%;
+    background: rgb(38, 182, 201);
+    border: 2px solid rgb(58, 63, 66);
+    border-left: none;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 2px 2px 10px black,inset -2px -4px 10px black,-2px -4px 10px black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn:hover{
+    background: rgb(38, 182, 201,0.644);
+    
+}
+.chat-container{  
+    width: 100%;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+.user-chat-box{
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(75, 170, 253);
+    border-radius: 30px 30px 0px 30px;
+    color: rgba(255, 255, 255, 0.815);
+    font: 20px;
+}
+.ai-chat-box{
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    background-color: rgba(75, 170, 253, 0.596);
+    border-radius:30px 30px 30px 0px;
+    color:  rgba(255, 255, 255, 0.815);
+    font: 20px ;
+}
+.img{
+   width: 80px;
+   height: 100%; 
+}
